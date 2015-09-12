@@ -1,2 +1,4 @@
 ruby/config/newrelic.yml
 ruby/vendor/bundle/
+ruby/.bundle/
+ruby/Gemfile.lock
