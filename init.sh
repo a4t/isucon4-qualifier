@@ -11,3 +11,5 @@ mysql -h ${myhost} -P ${myport} -u ${myuser} -e "DROP DATABASE IF EXISTS ${mydb}
 mysql -h ${myhost} -P ${myport} -u ${myuser} ${mydb} < sql/schema.sql
 mysql -h ${myhost} -P ${myport} -u ${myuser} ${mydb} < sql/dummy_users.sql
 mysql -h ${myhost} -P ${myport} -u ${myuser} ${mydb} < sql/dummy_log.sql
+
+BUNDLE_GEMFILE=/home/isucon/isucon4-qualifier/webapp/ruby/Gemfile ruby -rbundler/setup /home/isucon/isucon4-qualifier/webapp/init.redis.rb
